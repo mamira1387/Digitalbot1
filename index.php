@@ -13,7 +13,8 @@ if (!$ok) die();
 
 
 date_default_timezone_set('Asia/Tehran');
-error_reporting(0);
+error_reporting(E_ALL); // نمایش همه خطاها
+ini_set('display_errors', 1); // نمایش خطاها در خروجی وب (برای دیباگ)
 $token="8184604410:AAGdXV3_Wog3A7UDLcvbn1Qq0Vv6KP6aSnw";//توکن
 define('API_KEY',$token);
 mkdir("data");
